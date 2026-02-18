@@ -1,0 +1,47 @@
+{
+    "name": "jcfrane/laravel-resource-scope",
+    "description": "Symfony-like serialization scoping for Laravel API Resources. Define scopes to control which fields are returned per context.",
+    "keywords": ["laravel", "api", "resource", "scope", "serialization", "groups"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JC Frane"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/http": "^11.0|^12.0",
+        "illuminate/support": "^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0",
+        "pestphp/pest": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JCFrane\\ResourceScope\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JCFrane\\ResourceScope\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "pest"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JCFrane\\ResourceScope\\ResourceScopeServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
