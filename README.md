@@ -1,5 +1,9 @@
 # Laravel Resource Scope
 
+[![Tests](https://github.com/jcfrane/laravel-resource-scope/actions/workflows/tests.yml/badge.svg)](https://github.com/jcfrane/laravel-resource-scope/actions/workflows/tests.yml)
+[![Latest Stable Version](https://img.shields.io/packagist/v/jcfrane/laravel-resource-scope.svg)](https://packagist.org/packages/jcfrane/laravel-resource-scope)
+[![License](https://img.shields.io/packagist/l/jcfrane/laravel-resource-scope.svg)](https://packagist.org/packages/jcfrane/laravel-resource-scope)
+
 Control which fields your Laravel API Resources return based on context. Define scopes like `listing`, `detail`, or `summary` and let the frontend request only the data it needs.
 
 Inspired by Symfony's serialization groups.
@@ -7,7 +11,7 @@ Inspired by Symfony's serialization groups.
 ## Requirements
 
 - PHP 8.2+
-- Laravel 11 or 12
+- Laravel 11, 12, or 13
 
 ## Installation
 
